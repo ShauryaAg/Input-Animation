@@ -1,0 +1,59 @@
+#container{
+    align-self: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.form-feild{
+    display: block;
+    position: relative;
+}
+
+.form-feild > input{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 15px 8px 5px;
+    border-bottom: 2px solid #ddd;
+    color: transparent;
+    font-size: 2.2vh;
+    font-weight: bold;
+    color: black;
+    outline: none;
+}
+
+.form-feild > input:focus, .form-feild > input:valid{
+    color: #222;
+    border-color: #206594;
+}   
+
+.form-feild > label{
+    position: absolute;
+    bottom: 4px;
+    left: 8px;
+    font-size: 2.2vh;
+    opacity: 0.5;
+    height: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #666;
+    cursor: text;
+    transition: 
+            font-size .35s ease,
+            bottom .35s ease,
+            opacity .35s ease,
+            left .35s ease;      
+}
+
+.form-feild > input:focus + label, .form-feild > input:valid + label{
+    font-size: 1.7vh;
+    bottom: 25px;
+    left: 0;
+    opacity: .3;
+}
